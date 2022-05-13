@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>churrasco</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        let  homens,mulheres,bebidas,carvao,consumoHomens,consumoMulheres,consumoTotal,pessoas;
+        homens=parseInt(prompt("Quantos homens?"));
+        mulheres=parseInt(prompt("Quantas mulheres?"));
+        pessoas=homens+mulheres;
+        bebidas=(pessoas*1.5)/2; //garrafa 2LT
+        consumoHomens=homens*400;
+        consumoMulheres=mulheres*300;
+        consumoTotal=consumoHomens+consumoMulheres;
+        carvao=consumoTotal/6000; // para cada 6KG de carne é necessario 1 saco de carvao 5KL
+
+        //alert("quantidade de pessoas: " + pessoas);
+        alert("quantidade de carvao: " + Math.ceil(carvao))
+        //alert("Consumo Feminino: " + consumoMulheres + " gramas de carne");
+        //alert("Consumo Masculino: " + consumoHomens + " gramas de carne");
+        //alert("Consumo total de carne: " + consumoTotal + " gramas de carne");
+        //alert("Consumo total de refrigerantes: " + Math.ceil(bebidas) + " litros de bebidas");
+
+     </script>
+</head>
+<body>
+    
+</body>
+</html>
